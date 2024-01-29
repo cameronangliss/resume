@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge Cameron Angliss} \\ \vspace{1pt}
+    \small 774-571-0065 $|$ cameronangliss99@gmail.com $|$ 
+    \href{https://linkedin.com/in/cameron-angliss/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/cameronangliss}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Texas at Austin}{Austin, TX}
+      {Master of Science - Computer Science - GPA: 3.78}{Aug. 2023 -- Present}
+    \resumeSubheading
+      {Connecticut College}{New London, CT}
+      {Bachelor of Arts - Majors: Computer Science, Mathematics, Physics - GPA: 3.99}{Aug. 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{June 2022 -- Present}
+      {ThayerMahan, Inc}{Groton, CT}
+      \resumeItemListStart
+        \resumeItem{Develop frontend and backend aspects of company's software for three major repositories}
+        \resumeItem{Contribute to migrating thousands of lines of JavaScript to TypeScript to reduce tech-debt}
+        \resumeItem{Augment user interface to support data visualization features that are highly requested by customers}
+        \resumeItem{Introduce type safety and functional programming concepts to codebase}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {DevOps Engineer Intern}{June 2021 -- August 2021}
+      {Nuance Communications, Inc}{Birmingham, MA}
+      \resumeItemListStart
+        \resumeItem{Selected for internship in elite cloud computing infrastructure team, noticed team's low security score of 20\%}
+        \resumeItem{Created pull requests on Docker and Kubernetes files and Python scripts, eliminated 20+ security vulnerabilities}
+        \resumeItem{Fortified team's security score from 20\% to 75\%, braced team's infrastructure for the 2022 Microsoft acquisition}
+        \resumeItem{Acquired skills in 10+ tools/methodologies (ex. Azure DevOps, Docker, Kubernetes, Helm, Git, Agile workflow)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Math Help Center Tutor, Computer Science TA}{August 2019 -- May 2022}
+      {Connecticut College's Academic Resource Center}{New London, CT}
+      \resumeItemListStart
+        \resumeItem{Tutored 8 math classes and 3 upper-level computer science classes (Algorithms, AI, Computational Intelligence)}
+        \resumeItem{Designed and implemented creative strategies to familiarize students with particularly difficult concepts}
+        \resumeItem{Determined student's knowledge level, identified areas of weakness, offered extra 1-on-1 help for struggling students}
+        \resumeItem{Appointed as manager of MHC in junior year, optimized MHC to cope with COVID lockdown, scheduled 4 weekly tutoring sessions, informed professors of struggling students, provided mentorship to new math tutors}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Cynthia} $|$ \emph{Python, Pytorch}}{March 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Reinforcement learning in Pokemon Showdown}
+            \resumeItem{blah}
+            \resumeItem{blah}
+            \resumeItem{blah}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Showdown Environment} $|$ \emph{Python}}{March 2023 -- October 2023}
+          \resumeItemListStart
+            \resumeItem{RL environment for Pokemon Showdown}
+            \resumeItem{blah}
+            \resumeItem{blah}
+            \resumeItem{blah}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Undergraduate Research} $|$ \emph{Haskell}}{August 2020 -- February 2023}
+          \resumeItemListStart
+            \resumeItem{Conducted independent AI research with Professor Gary B. Parker through research seminars and honors studies}
+            \resumeItem{Built 6 parallel genetic algorithms to evolve teams of neural network agents to generate optimal hexapod gaits}
+            \resumeItem{Utilized math and physics knowledge to design efficient and accurate hexapod simulation}
+            \resumeItem{Wrote over 1100 lines of code in Haskell, learned modern functional programming techniques}
+            \resumeItem{Authored honors thesis titled "Using Multi-Agent Learning to Achieve Emergent Decentralized Hexapod Gait"}
+            \resumeItem{Coauthored and published "Coevolving Hexapod Legs to Generate Tripod Legs" to ICAART 2023 conference}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Python/Mojo, Rust, Haskell, Java, JavaScript/TypeScript, HTML/CSS, Mathematica} \\
+      \textbf{Frameworks}{: Angular, Node.js} \\
+      \textbf{Developer Tools}{: Linux, Git, VSCode, Docker, AWS} \\
+      \textbf{Libraries}{: Pytorch, NumPy, Matplotlib, pandas}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
