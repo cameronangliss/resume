@@ -1,2 +1,2 @@
 # resume
-My personal resume: [click to preview](resume.pdf)
+My personal resume: [resume.pdf](resume.pdf)
