@@ -1,2 +1,2 @@
 # resume
-My resume, written in LaTeX: [click to preview](resume.pdf)
+My personal resume: [click to preview](resume.pdf)
