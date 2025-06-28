@@ -110,6 +110,9 @@
     \resumeSubheading
       {The University of Texas at Austin}{August 2023 -- Present}
       {Master of Science - Computer Science - GPA: 3.89}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Courses: Parallel Systems (Fall 2025), Programming Languages, Reinforcement Learning, Machine Learning (Fall 2025), Deep Learning, Optimization, Quantum Computing, Automated Logical Reasoning, Master's Thesis}
+      \resumeItemListEnd
     \resumeSubheading
       {Connecticut College}{August 2018 -- May 2022}
       {Bachelor of Arts - Majors: Computer Science, Mathematics, Physics - GPA: 3.99}{New London, CT}
@@ -126,22 +129,22 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+    {Embedded Software Engineer}{May 2024 -- March 2025}
+    {Anduril Industries}{Costa Mesa, CA}
+    \resumeItemListStart
+      \resumeItem{Developed Haskell software for \href{https://www.anduril.com/hardware/pulsar/}{Pulsar}, a next-gen family of EW systems that defend against unmanned aerial threats}
+      \resumeItem{Led development for a multi-million dollar contract to dramatically expand the customer base of Pulsar products}
+      \resumeItem{Showcased capabilities to prospective customers at multiple high-profile demos, sometimes requiring inter-state travel}
+      \resumeItem{Obtained secret clearance, completed thorough background investigation and compliance with security protocols}
+    \resumeItemListEnd
+
+    \resumeSubheading
       {Software Engineer}{June 2022 -- July 2023}
       {ThayerMahan, Inc}{Groton, CT}
       \resumeItemListStart
         \resumeItem{Developed data visualization website, allowing Navy employees to analyze data collected via autonomous boats}
         \resumeItem{Migrated 1000's of lines of JavaScript to TypeScript under Angular framework, reduced 5+ years worth of tech-debt}
-        \resumeItem{Spearheaded innovation in frontend visualizations, enhancing user experience and data representation on the platform}
-        \resumeItem{Obtained secret clearance, completed thorough background investigation and compliance with security protocols}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Math Help Center Tutor, Computer Science TA}{August 2019 -- May 2022}
-      {Academic Resource Center, Connecticut College}{New London, CT}
-      \resumeItemListStart
-        \resumeItem{Mentored for 8 math classes and 3 upper-level computer science classes (Algorithms, AI, Computational Intelligence)}
-        \resumeItem{Determined student's knowledge level, identified areas of weakness, offered extra 1-on-1 help for struggling students}
-        \resumeItem{Assumed position of MHC manager in junior year, scheduled tutoring sessions, provided mentorship to new math tutors}
+        \resumeItem{Drove improvements in frontend visualizations, focusing on user experience and effective data representation}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -159,28 +162,33 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{VGC-Bench} $|$ \emph{Python, Pytorch, Stable-Baselines3, RLlib}}{May 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed a benchmark suite for training and evaluating AI agents in the setting of competitive Pokémon battles}
+        \resumeItem{Investigated performance of PPO algorithm paired with transformer-based neural networks and several PSRO algorithms}
+        \resumeItem{Strongest agent won a game against a professional VGC competitor who has competed at the VGC World Championships}
+        \resumeItem{Authored paper \href{https://arxiv.org/abs/2506.10326}{"VGC-Bench: A Benchmark for Generalizing Across Diverse Team Strategies in Competitive Pokémon"}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Poke-env} $|$ \emph{Python}}{July 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Merged 30+ pull requests into Poke-env, a popular open-source library used for developing Pokémon AI agents}
+        \resumeItem{Implemented migration to PettingZoo-based environments, enabling research in multi-agent reinforcement learning}
+        \resumeItem{Extended library to support training AI in double battles, opening new avenues of research in AI for competitive Pokémon}
+        \resumeItem{Added types throughout codebase and modernized packaging, greatly improving usability and maintainability}
+      \resumeItemListEnd
+
       \resumeProjectHeading
-          {\textbf{Cynthia: The Pokemon Showdown RL Agent} $|$ \emph{Python, Pytorch}}{March 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{Programmed reinforcement learning agent that learns to play Pokemon battles on Pokemon Showdown website}
-            \resumeItem{Implemented reinforcement learning with Expected SARSA algorithm, softmaxing over outputs to choose action}
-            \resumeItem{Applied transformers architecture to improve over CNN architecture taking state-based inputs of battle state}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Showdown Environment} $|$ \emph{Python}}{March 2023 -- October 2023}
-          \resumeItemListStart
-            \resumeItem{Constructed a reinforcement learning environment for agent training on the Pokemon Showdown website}
-            \resumeItem{Built 3 main parts: a client-side websocket interface, a battle tracking component, data collection component}
-            \resumeItem{Published project on GitHub for community use, documented how to install and utilize package for generic use cases}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Undergraduate Research in Genetic Algorithms and Robotics} $|$ \emph{Haskell}}{August 2020 -- February 2023}
-          \resumeItemListStart
-            \resumeItem{Conducted independent AI research with Professor Gary B. Parker through research seminars and honors studies}
-            \resumeItem{Assembled 6 parallel genetic algorithms to evolve teams of neural network agents to generate optimal hexapod gaits}
-            \resumeItem{Utilized math and physics knowledge to design custom simulation, achieved sub-0.1s testing times per hexapod}
-            \resumeItem{Published results as primary author, delivered presentation at ICAART 2023 conference in Lisbon, Portugal}
-          \resumeItemListEnd
+        {\textbf{Undergraduate Research in Genetic Algorithms and Robotics} $|$ \emph{Haskell}}{August 2020 -- February 2023}
+        \resumeItemListStart
+          \resumeItem{Assembled 6 parallel genetic algorithms to evolve teams of neural network agents to generate optimal hexapod gaits}
+          \resumeItem{Utilized math and physics knowledge to design custom simulation, achieved sub-0.1s testing times per hexapod}
+          \resumeItem{Published results as primary author, delivered presentation at ICAART 2023 conference in Lisbon, Portugal}
+        \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 
 
@@ -188,10 +196,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: Python/Mojo, Rust, Haskell, Java, JavaScript/TypeScript, HTML/CSS, Mathematica} \\
+      \textbf{Languages}{: Python/Mojo, Haskell, Rust, Java, JavaScript/TypeScript, HTML/CSS, Mathematica} \\
       \textbf{Frameworks}{: Angular, Node.js} \\
       \textbf{Developer Tools}{: Linux, Git, VSCode, Docker, Kubernetes, Azure DevOps, AWS} \\
-      \textbf{Libraries}{: Pytorch, NumPy, Matplotlib, pandas}
+      \textbf{Libraries}{: Pytorch, Stable-Baselines3, RLlib, NumPy, Matplotlib, pandas}
     }}
  \end{itemize}
 
